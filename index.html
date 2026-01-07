@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskGenie AI | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TaskGenie <span>AI</span></h1>
+            <p id="quote">"Small steps lead to big results."</p>
+        </header>
+
+        <div class="input-section">
+            <input type="text" placeholder="Enter your goal..." id="taskInput">
+            <div class="btn-group">
+                <button class="add-btn">Add Simple</button>
+                <button class="ai-btn">AI Suggest ✨</button>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="column" id="todo">
+                <h3>To-Do</h3>
+                <div class="task-list"></div>
+            </div>
+            <div class="column" id="doing">
+                <h3>In Progress</h3>
+                <div class="task-list"></div>
+            </div>
+            <div class="column" id="done">
+                <h3>Completed</h3>
+                <div class="task-list"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

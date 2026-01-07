@@ -1,0 +1,51 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #1a1a2e; color: white; font-family: 'Segoe UI', sans-serif; padding: 20px; }
+.container { max-width: 1100px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 30px; }
+header h1 span { color: #4ecca3; }
+
+/* Input & Buttons */
+.input-section { display: flex; flex-direction: column; gap: 15px; margin-bottom: 40px; }
+input { background: #16213e; border: 2px solid #4ecca3; padding: 15px; border-radius: 8px; color: white; outline: none; font-size: 16px; }
+.btn-group { display: flex; gap: 10px; }
+button { flex: 1; padding: 12px; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; transition: 0.3s; }
+.add-btn { background: #4ecca3; color: #1a1a2e; }
+.ai-btn { background: #6c5ce7; color: white; }
+button:hover { opacity: 0.8; transform: translateY(-2px); }
+
+/* Board & Columns */
+.board { display: flex; gap: 20px; }
+.column { background: rgba(255, 255, 255, 0.05); border-radius: 12px; width: 33%; min-height: 500px; padding: 15px; border: 1px solid rgba(255,255,255,0.1); }
+h3 { text-align: center; margin-bottom: 20px; color: #4ecca3; text-transform: uppercase; letter-spacing: 1px; }
+.task-list { min-height: 450px; }
+
+/* Stylish Task Card */
+.task-card {
+    background: #16213e;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    cursor: grab;
+    border-left: 5px solid #4ecca3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.task-card p { flex: 1; margin-right: 10px; }
+
+/* Delete Button Style */
+.delete-btn {
+    background: rgba(255, 77, 77, 0.1);
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+    padding: 5px 10px;
+    font-size: 11px;
+    border-radius: 5px;
+    flex: none;
+    width: auto;
+}
+.delete-btn:hover { background: #ff4d4d; color: white; }
+
+/* Dragging State */
+.dragging { opacity: 0.4; border: 2px dashed #4ecca3; }
